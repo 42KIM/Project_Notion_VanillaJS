@@ -9,11 +9,11 @@ export default function App({ $target }) {
 
   this.route = () => {
     const { pathname } = window.location;
-    const [, , documentId = "/", parentId = null] = pathname.split("/");
+    const [, , , documentId = "/", parentId = null] = pathname.split("/");
     const $contentPage = document.querySelector(".contentPage");
     const $editor = $contentPage.querySelector(".editor");
 
-    if (pathname === "/") {
+    if (pathname === "/VanillaJS_Notion_clone/") {
       $editor.classList.add("hideDisplay");
 
       contentPage.setState({

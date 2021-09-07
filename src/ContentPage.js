@@ -32,7 +32,7 @@ export default function ContentPage({ $target }) {
         });
 
         const { pathname } = window.location;
-        const [, , documentId] = pathname.split("/");
+        const [, , , documentId] = pathname.split("/");
 
         pushRoute(`/documents/${documentId}`);
       }, 1000);
