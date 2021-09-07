@@ -3,7 +3,7 @@ export const initRouter = (onRoute) => {
     const { nextUrl } = e.detail;
 
     if (nextUrl) {
-      history.pushState(null, null, `/VanillaJS_Notion_clone/${nextUrl}`);
+      history.pushState(null, null, `/VanillaJS_Notion_clone${nextUrl}`);
       onRoute();
     }
   });
